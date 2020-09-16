@@ -89,6 +89,20 @@ padding-top: 5px;
 
 }
 
+.BackgroundButtons {
+  padding: 4px;
+  background-color: aquamarine;
+  display: inline-block;
+  text-align: center;
+  border: solid 1px yellow;
+  margin: 3px;
+}
+
+.BackgroundButtons img{
+  height: 40px;
+  width: 40px;
+}
+
 .header-with-line {
   border-bottom:2px solid rgb(255, 0, 0);
   width:100%;
@@ -178,6 +192,7 @@ background-image: url(../images/Background_Tiles/bluesand_paper.gif);
   font-size: 15px;
   background-color: tomato;
   word-wrap: break-word;
+  color: black;
 }
 
 .button {
@@ -191,6 +206,22 @@ background-image: url(../images/Background_Tiles/bluesand_paper.gif);
   margin: 4px 2px;
   transition-duration: 1s;
   cursor: pointer;
+}
+
+#GoToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 0px;
+  z-index: 20;
+  font-size: 40px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
 }
 
 .button1 {
@@ -218,3 +249,4 @@ background-image: url(../images/Background_Tiles/bluesand_paper.gif);
     width: 100%;
   }
 }
+
