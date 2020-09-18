@@ -1,6 +1,6 @@
 
 body {
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(61, 61, 61);
   margin: 0px;
 }
@@ -74,7 +74,7 @@ padding-top: 5px;
 
 .main {
   margin-left: 300px;
-  top: 383px;
+  top: 359px;
   position: absolute;
   background-image: url(../images/Background_Tiles/orange_paper.gif);
   border-bottom: 2px red;
