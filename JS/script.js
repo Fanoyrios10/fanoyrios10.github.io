@@ -96,38 +96,52 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
+var x = document.getElementById("Texture");
+var y = document.getElementById("Texture");
+
+
 function background1() {
-  var x = document.getElementById("Texture");
   x.style.backgroundImage = "url(../../../images/Background_Tiles/5003.gif)";
   x.style.color = "black";
+  return x.style;
 }
 
 function background2() {
-  var x = document.getElementById("Texture");
   x.style.backgroundImage = "url(../../../images/Background_Tiles/Black.gif)";
   x.style.color = "white";
+  return x.style;
 }
 
 function background3() {
-  var x = document.getElementById("Texture");
   x.style.backgroundImage = "url(../../../images/Background_Tiles/Blue.gif)";
   x.style.color = "Black";
+  return x.style;
 }
 
 function background4() {
-  var x = document.getElementById("Texture");
   x.style.backgroundImage = "url(../../../images/Background_Tiles/YellowLight.gif)";
   x.style.color = "Black";
+  return x.style;
 }
 
 function background5() {
-  var x = document.getElementById("Texture");
   x.style.backgroundImage = "url(../../../images/Background_Tiles/wrinkled-paper-texture_1100-12.gif)";
   x.style.color = "Black";
+  return x.style;
 }
 
 function background6() {
-  var x = document.getElementById("Texture");
   x.style.backgroundImage = "url(../../../images/Background_Tiles/orange_paper.gif)";
   x.style.color = "Black";
+  return x.style;
 }
+
+setInterval(function store(){
+  if (typeof(Storage) !== "undefined") {
+    localStorage.setItem(y.style.backgroundImage,x.style.backgroundImage);
+    document.getElementById("Texture").style.backgroundImage = localStorage.getItem(y.style.backgroundImage);
+}
+}, 1000);
+
+console.log(x.style.backgroundImage);
+console.log(y.style.backgroundImage);
