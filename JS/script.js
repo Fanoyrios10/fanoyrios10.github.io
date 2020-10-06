@@ -14,70 +14,43 @@ for (i = 0; i < dropdown.length; i++) {
   });
 }
 
-function playMusic(){
+function playMusicHover(){
   let music = new Audio('../../../audio/Wimdows Sounds/Windows 98/Windows 98 menu popup.mp3');
   music.play();
   }
 
-function playMusic2(){
+function PlayMusicFinishedHTML(x){
   let music = new Audio('../../../audio/Wimdows Sounds/Windows 98/Windows 98 menu command.mp3');
   music.play();
+  if (x === "Home") {
+      setTimeout(function () {
+      location.href = "Home-page-gr.html";
+      }, 500);
+  } else if (x === "Windows DR5") {
+    setTimeout(function () {
+      location.href = "Windows-1.0-DR5-gr.html";
+      }, 500);
+  } else if (x === "Windows PRE") {
+    setTimeout(function () {
+      location.href = "Windows-Premiere-Edition-gr.html";
+      }, 500);
+  } else if (x === "Windows 1.04") {
+    setTimeout(function () {
+      location.href = "Windows-1.04-gr.html";
+      }, 500);
+  } else if (x === "Windows PCem") {
+    setTimeout(function () {
+      location.href = "PCem-Setup-gr.html";
+      }, 500);
+  } else if (x === "UC") {
+    setTimeout(function () {
+      location.href = "../../under_construction.html";
+      }, 500);
+  } else if (x === "Index") {
+    setTimeout(function () {
+      location.href = "../../../index.html";
+      }, 500);
   }
-
-function playMusic1974(){
-  let music = new Audio('../../../audio/Wimdows Sounds/Windows 98/Windows 98 menu command.mp3');
-  music.play();
-  setTimeout(function () {
-    location.href = "Home-page-gr.html";
-    }, 500);
-  }
-
-function playMusicWindowsDR5(){
-  let music = new Audio('../../../audio/Wimdows Sounds/Windows 98/Windows 98 menu command.mp3');
-  music.play();
-  setTimeout(function () {
-    location.href = "Windows-1.0-DR5-gr.html";
-    }, 500);
-  }
-
-function playMusicWindowsPR(){
-  let music = new Audio('../../../audio/Wimdows Sounds/Windows 98/Windows 98 menu command.mp3');
-  music.play();
-  setTimeout(function () {
-    location.href = "Windows-Premiere-Edition-gr.html";
-    }, 500);
-  }
-
-function playMusicWindows104(){
-  let music = new Audio('../../../audio/Wimdows Sounds/Windows 98/Windows 98 menu command.mp3');
-  music.play();
-  setTimeout(function () {
-    location.href = "Windows-1.04-gr.html";
-    }, 500);
-}
-
-function playMusicPCem(){
-  let music = new Audio('../../../audio/Wimdows Sounds/Windows 98/Windows 98 menu command.mp3');
-  music.play();
-  setTimeout(function () {
-    location.href = "PCem-Setup-gr.html";
-    }, 500);
-}
-
-function playMusicUnderConstruction(){
-  let music = new Audio('../../../audio/Wimdows Sounds/Windows 98/Windows 98 menu command.mp3');
-  music.play();
-  setTimeout(function () {
-    location.href = "../../under_construction.html";
-    }, 500);
-}
-
-function playMusicIndex(){
-  let music = new Audio('../../../audio/Wimdows Sounds/Windows 98/Windows 98 menu command.mp3');
-  music.play();
-  setTimeout(function () {
-    location.href = "../../../index.html";
-    }, 500);
 }
 
 let mybutton = document.getElementById("GoToTop");
@@ -99,7 +72,6 @@ function topFunction() {
 
 let x = document.getElementById("Texture");
 let y = document.getElementById("Texture");
-
 
 function background1() {
   x.style.backgroundImage = "url(../../../images/Background_Tiles/5003.gif)";
@@ -137,12 +109,12 @@ function background6() {
   return x.style;
 }
 
-setInterval(function store(){
+function store(){
   if (typeof(Storage) !== "undefined") {
     localStorage.setItem(y.style.backgroundImage,x.style.backgroundImage);
     document.getElementById("Texture").style.backgroundImage = localStorage.getItem(y.style.backgroundImage);
+  }
 }
-}, 1000);
 
 console.log(x.style.backgroundImage);
 console.log(y.style.backgroundImage);

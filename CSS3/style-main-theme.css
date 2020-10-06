@@ -12,8 +12,18 @@ body {
   padding: 80px;
   width: unset;
   text-align: center;
-  background-image: linear-gradient(to right, red,green,blue,yellow);
-  color: crimson;
+  background-image: linear-gradient(270deg, red,green,blue,yellow);
+  background-size: 800% 800%;
+  color: purple;
+  animation: BanerAnimation;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes BanerAnimation {
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
 }
 
 .header h1 {
@@ -40,16 +50,16 @@ body {
 }
 
 .navbar a:hover {
-  background-color: rgb(18, 32, 155);
-  transition-duration: 1s;
-  color: rgb(245, 10, 10);
+  animation: colorSwitchNavBar;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
 }
 
 .sidenav {
-left: 0;
-width: 300px;
-background-color: rgb(61, 61, 61);
-padding-top: 5px;
+  left: 0;
+  width: 300px;
+  background-color: rgb(61, 61, 61);
+  padding-top: 5px;
 }
 
 .contents {
@@ -75,8 +85,12 @@ padding-top: 5px;
   text-decoration: none;
 }
 
+.contents h1{
+  color: black;
+}
+
 .main {
-  margin-left: 300px;
+  left: 300px;
   top: 359px;
   position: absolute;
   background-image: url(../images/Background_Tiles/orange_paper.gif);
@@ -98,6 +112,7 @@ padding-top: 5px;
   text-align: center;
   border: solid 1px yellow;
   margin: 3px;
+  cursor: pointer;
 }
 
 .BackgroundButtons img{
@@ -115,59 +130,84 @@ padding-top: 5px;
   padding-left: 0px;
 }
 
+.dropdown-btn img {
+  width: 290px;
+  height: 60px;
+  vertical-align: middle;
+}
+
+@keyframes colorSwitchNavBar {
+  0%   {background-color:red;}
+  25%  {color: black; background-color:yellow;}
+  50%  {color: white; background-color:blue;}
+  75%  {background-color:green;}
+  100% {background-color:red;}
+}
+
+@keyframes colorSwitch {
+  0%   {background-color:red;}
+  25%  {color: rgb(15, 211, 146); background-color:yellow;}
+  50%  {color: white; background-color:blue;}
+  75%  {color: rgb(15, 211, 146);background-color:green;}
+  100% {background-color:red;}
+}
+
 .sidenav a, .dropdown-btn {
-padding: 6px 0 6px 0;
-text-decoration: none;
-font-size: 25px;
-font-weight: bold;
-text-align: center;
-color: rgb(15, 211, 146);
-display: block;
-border: none;
-background: none;
-width: 100%;
-cursor: pointer;
-outline: none;
+  padding: 6px 0 6px 0;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(15, 211, 146);
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
 }
 
 .audiop {
-text-align: left;
+  text-align: left;
 }
 
 .videov {
-text-align: center;
+  text-align: center;
 }
 
 .sidenav a:hover, .dropdown-btn:hover {
-color: rgb(19, 8, 8);
-background-color: yellow;
-transition-duration: 1s;
+  color: rgb(19, 8, 8);
+  animation: colorSwitch;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
 }
 
 .active {
-background-color: red;
-color: white;
+  color: white;
+  animation-name: colorSwitch;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
 }
 
 .dropdown-container {
-display: none;
-background-color: rgb(38, 38, 38);
+  display: none;
+  background-color: rgb(38, 38, 38);
 }
 
 .sidenav-free-text {
-color: cyan;
-font-size: 20px;
-padding-left: 16px;
-padding-right: 16px;
-text-align: center;
+  color: cyan;
+  font-size: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
 }
 
 .galleryBackground {
-border: 5px double green;
-border-radius: 10px;
-padding: 30px;
-text-align: center;
-background-image: url(../images/Background_Tiles/bluesand_paper.gif);
+  border: 5px double green;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  background-image: url(../images/Background_Tiles/bluesand_paper.gif);
 }
 
 .gallery {
