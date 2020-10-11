@@ -291,7 +291,7 @@ img {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   .main {
     position: relative;
     left: auto;
@@ -303,6 +303,7 @@ img {
   }
   .sidenav img {
     width: 75%;
+    height: 100px;
   }
 }
 
