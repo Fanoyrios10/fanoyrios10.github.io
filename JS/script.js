@@ -115,6 +115,5 @@ function store(){
     document.getElementById("Texture").style.backgroundImage = localStorage.getItem(y.style.backgroundImage);
   }
 }
-
 console.log(x.style.backgroundImage);
 console.log(y.style.backgroundImage);
