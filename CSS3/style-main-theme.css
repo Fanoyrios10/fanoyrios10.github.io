@@ -9,9 +9,7 @@ body {
   margin: 0px;
 }
 
-img {
-  width: 100%;
-}
+
 
 .videov iframe {
   width: 80%;
@@ -83,14 +81,15 @@ img {
 .contents a:hover{
   background-color: red;
   color: yellow;
-  transition-duration: 1s;
+  transition-duration: 2s;
+}
+
+.contents a:not(:hover){
+  transition-duration: 2s;
 }
 
 .contents li{
   text-decoration: none;
-}
-
-.contents h1{
   color: black;
 }
 
@@ -242,6 +241,12 @@ img {
   color: black;
 }
 
+.gif_pictures{
+  width: 600px;
+  height: 1000px;
+  text-align: center;
+}
+
 .button {
   border: none;
   color: white;
@@ -271,6 +276,31 @@ img {
   border-radius: 4px;
 }
 
+#hideAndShowSideNav {
+  background-color: rgb(2, 7, 255); 
+  color: rgb(250, 4, 4); 
+  border: 10px solid rgb(76, 175, 80);
+  width: 50%;
+  height: 100px;
+  font-size: 38px;
+  cursor: pointer;
+  margin: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#hideAndShowSideNav:hover{
+  background-color: rgb(208, 255, 0);
+  color: black;
+  transition-duration: 2s;
+}
+
+#hideAndShowSideNav:not(:hover){
+  background-color: rgb(2, 7, 255); 
+  color: rgb(250, 4, 4); 
+  transition-duration: 2s;
+}
+
 .button1 {
   background-color: rgb(2, 7, 255); 
   color: rgb(250, 4, 4); 
@@ -284,7 +314,7 @@ img {
   color: white;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1015px) {
   .main {
     position: relative;
     left: auto;
@@ -292,11 +322,12 @@ img {
   }
   .sidenav{
     left: auto;
+    position: relative;
     width: 100%;
   }
   .sidenav img {
     width: 75%;
-    height: 100px;
+    height: 80px;
   }
   .dropdown-container{
     margin: auto;
@@ -309,4 +340,15 @@ img {
     font-size: 45px;
     margin: auto;
   }
+  .main-text {
+    font-size: 24px;
+  }
+  .desc {
+    font-size: 24px;
+  }
+  #hideAndShowSideNav{
+    display: none;
+  }
 }
+
+

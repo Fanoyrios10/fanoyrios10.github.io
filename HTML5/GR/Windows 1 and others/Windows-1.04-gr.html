@@ -22,7 +22,7 @@
   <a href="mailto:win_hist_2020@outlook.com?subject=Προτάσεις/Σχόλια/Ερωτήσεις" class="right" onmouseover="playMusicHover()">E-mail για Προτάσεις/Σχόλια/Ερωτήσεις</a>
 </div>
 <button onclick="topFunction()" id="GoToTop">&#8657;</button>
-  <div class="sidenav">
+  <div class="sidenav" id="side">
     <div class="sidenav-free-text">
     <p>Η κάθε έκδοση των Windows έχει και την δικιά της ιστοσελίδα. Για να την δείτε επιλέξτε το εικονίδιο της έκδοσης των Windows που θέλετε να δείτε και θα εμφανιστεί μια λίστα με διάφορες υπό εκδόσεις της επιλογής σας. Προτείνεται πάντως για την πλήρη και κατανοητή εμπειρία να ξεκινήσετε από την αρχή.</p>
     </div>
@@ -114,7 +114,10 @@
       <a onclick="PlayMusicFinishedHTML('UC')" onmouseover="playMusicHover()">Windows 8.1 <br>(21/08/2013)</a>
     </div>
   </div>
-  <div class="main" id="Texture">
+  <div class="main" id="main">
+    <div style="text-align: center;">
+    <button id="hideAndShowSideNav" onclick="sideNav()">Κρύψε την πλαϊνή μπάρα</button>
+    </div>
     <p style="text-align: center; font-size: 40px;">
       <b>Επιλέξτε το Background Texture σας που θέλετε να χρησιμοποιήσεται κάνοντας κλικ πάνω του:</b>
       <br>
@@ -269,13 +272,13 @@
         <a target="_blank" href="../../../images\Windows Premiere Edition\format C S.png">
           <img src="../../../images\Windows Premiere Edition\format C S.png" alt="format C S.">
         </a>
-        <div class="desc">Διαμοόρφωση του C δίσκου <br>Πατήστε πάνω για πλήρη εικόνα</div>
+        <div class="desc">Διαμόρφωση του C δίσκου <br>Πατήστε πάνω για πλήρη εικόνα</div>
 </div>
 <div class="gallery" style="width: 28%;">
   <a target="_blank" href="../../../images\Windows Premiere Edition\format C S succesfull.jpg">
     <img src="../../../images\Windows Premiere Edition\format C S succesfull.jpg" alt="format C S succesfull">
   </a>
-  <div class="desc">Ολοκλήρωση διαμοόρφωσης του C<br>Πατήστε πάνω για πλήρη εικόνα</div>
+  <div class="desc">Ολοκλήρωση διαμόρφωσης του C<br>Πατήστε πάνω για πλήρη εικόνα</div>
 </div>
 <div class="gallery" style="width: 28%;">
   <a target="_blank" href="../../../images\Windows Premiere Edition\execute setup windows.png">
@@ -388,38 +391,38 @@
     <li><b><u>Size: </u></b><u>Αυτήν την επιλογή μπορούμε να την χρησιμοποιήσουμε όταν έχουμε τουλάχιστον δύο παράθυρα ανοιχτά. Επιλέγοντας την ο κέρσορας μας αλλάζει στο εικονίδιο αλλαγής μεγέθους παραθύρου (εικονίδιο στην πάνω γωνία δεξιά). Κινώντας τον κέρσορα μας δεξιά-αριστερά όταν έχουμε παράθυρά το ένα δίπλα στο άλλο ή πάνω-κάτω όταν το ένα παράθυρο είναι πάνω στο άλλο τότε όταν ξεπεράσουμε το μέγεθος που έχει ήδη το παράθυρό μας εμφανίζονται τέλειες που δείχνουν το μέγεθος του παραθύρου εάν κάνουμε κλικ σε αυτό το σημείο. Η κάτω εικόνα το δείχνει αυτό στην πράξη.</u>
       <br>
       <br>
-      <img src="../../../images\Windows 1.04\Inside Windows\MS-DOS Executive\size window.gif" alt="size window" height="400px" style="display: block; margin-left: auto; margin-right: auto;">
+      <img src="../../../images\Windows 1.04\Inside Windows\MS-DOS Executive\size window.gif" alt="size window" height="400px" width="50%" style="display: block; margin-left: auto; margin-right: auto;">
       <br>
     </li>
     <li>
       <b><u>Move: </u></b><u>Όταν επιλέξουμε αυτήν την επιλογή ο κέρσορας μας αλλάζει στο εικονίδιο της εφαρμογής που έχουμε επιλεγμένη και μπορούμε κάνοντας ένα κλικ σε οποιοδήποτε σημείο πάνω στην οθόνη να μετακινήσουμε το παράθυρο μας ή να το ελαχιστοποιήσουμε. Δείτε το παράδειγμα στην κάτω εικόνα για να καταλάβετε.</u>
       <br>
       <br>
-      <img src="../../../images\Windows 1.04\Inside Windows\MS-DOS Executive\Move window.gif" alt="Move window" height="400px" style="display: block; margin-left: auto; margin-right: auto;">
+      <img src="../../../images\Windows 1.04\Inside Windows\MS-DOS Executive\Move window.gif" alt="Move window" height="400px" width="50%" style="display: block; margin-left: auto; margin-right: auto;">
       <br>
     </li>
     <li><b><u>Icon: </u></b><u>Όταν επιλέξουμε αυτήν την επιλογή το παράθυρο ελαχιστοποιείται και πηγαίνει στην γραμμή εικονιδίων των εφαρμογών μαζί με τις υπόλοιπες ελαχιστοποιημένες εφαρμογές. Δείτε το παράδειγμα στην κάτω εικόνα για να καταλάβετε.</u>
     <br>
     <br>
-    <img src="../../../images\Windows 1.04\Inside Windows\MS-DOS Executive\Icon window.gif" alt="Icon window" height="400px" style="display: block; margin-left: auto; margin-right: auto;">
+    <img src="../../../images\Windows 1.04\Inside Windows\MS-DOS Executive\Icon window.gif" alt="Icon window" width="50%" height="400px" style="display: block; margin-left: auto; margin-right: auto;">
     <br>
     </li>
     <li><b><u>Zoom: </u></b><u>Όταν επιλέξουμε αυτήν την επιλογή το παράθυρο μεγιστοποιείται και καταλαμβάνει ολόκληρη την οθόνη. Δείτε το παράδειγμα στην κάτω εικόνα για να καταλάβετε.</u>
       <br>
       <br>
-      <img src="../../../images\Windows 1.04\Inside Windows\MS-DOS Executive\zoom window.gif" alt="zoom window" height="400px" style="display: block; margin-left: auto; margin-right: auto;">
+      <img src="../../../images\Windows 1.04\Inside Windows\MS-DOS Executive\zoom window.gif" alt="zoom window" width="50%" height="400px" style="display: block; margin-left: auto; margin-right: auto;">
       <br>
     </li>
     <li><b><u>Close: </u></b><u>Όταν επιλέξουμε αυτήν την επιλογή η εφαρμογή τερματίζεται ολοκληρωτικά. Επίσης το ίδιο αποτέλεσμα θα έχουμε κάνοντας διπλό κλικ πάνω στο εικονίδιο με τις τρεις οριζόντιες γραμμές. Τέλος αν πατήσεις Close στο MS-DOS Executive θα σου βγει ένα παράθυρο που θα σε ρωτήσει εάν θέλεις να τερματίσεις ολοκληρωτικά τα Windows. Δείτε το παράδειγμα στην κάτω εικόνα για να καταλάβετε.</u>
       <br>
       <br>
-      <img src="../../../images\Windows 1.04\Inside Windows\MS-DOS Executive\close window.gif" alt="close window" height="400px" style="display: block; margin-left: auto; margin-right: auto;">
+      <img src="../../../images\Windows 1.04\Inside Windows\MS-DOS Executive\close window.gif" alt="close window" width="50%" height="400px" style="display: block; margin-left: auto; margin-right: auto;">
       <br>
       </li>
       <li><b><u>About: </u></b><u>Όταν επιλέξουμε αυτήν την επιλογή ένα παράθυρο εμφανίζεται που μας δίνει κάποιες ιδιότητες τις εφαρμογής όπως το πως ονομάζεται, το τι έκδοση είναι, σε πιο λειτουργικό σύστημα τρέχει καθώς κα την χρονολογία της. Επίσης μας εμφανίζονται διάφορες πληροφορίες ή οδηγίες σχετικά με την εφαρμογή π.χ. στο MS-DOS Executive μας εμφανίζεται ο ελεύθερος διαθέσιμο χώρος στον σκληρό δίσκο και η διαθέσιμη μνήμη RAM του συστήματος σε KB. Δείτε την εικόνα από κάτω για παράδειγμα.</u>
         <br>
         <br>
-        <img src="../../../images\Windows 1.04\Inside Windows\MS-DOS Executive\Executive About.png" alt="Executive About" height="400px" style="display: block; margin-left: auto; margin-right: auto;">
+        <img src="../../../images\Windows 1.04\Inside Windows\MS-DOS Executive\Executive About.png" alt="Executive About" width="50%" height="400px" style="display: block; margin-left: auto; margin-right: auto;">
         <br>
       </li>
       </ol>
@@ -580,7 +583,7 @@
             <a target="_blank" href="../../../images\Windows Premiere Edition\inside Windows\MS-DOS Executive\Special Menu format Data Disk.jpg">
               <img src="../../../images\Windows Premiere Edition\inside Windows\MS-DOS Executive\Special Menu format Data Disk.jpg" alt="Special Menu format Data Disk">
             </a>
-            <div class="desc">Παράθυρο διαμοόρφωσης δισκέτας φακέλου<br>Πατήστε πάνω για πλήρη εικόνα</div>
+            <div class="desc">Παράθυρο διαμόρφωσης δισκέτας φακέλου<br>Πατήστε πάνω για πλήρη εικόνα</div>
             </div>
             <div class="gallery" style="width:30%">
               <a target="_blank" href="../../../images\Windows Premiere Edition\inside Windows\MS-DOS Executive\Special Menu System Disk.jpg">
@@ -637,7 +640,7 @@
 <u>Άλλο ένα πρόγραμμα που είναι καινούργιο στα Windows και θα εξηγηθεί μέσα από ένα βίντεο είναι το ημερολόγιο, το πρώτο πρόγραμμα που μας βοηθάει στον σχεδιασμό μας.</u>
 </p>
 <h1 class="header-with-line" id="chapter9"><u>Cardfile (Κάρτες)</u> <img src="../../../images\Windows Premiere Edition\inside Windows\Cardfile\Cardfile Icon.png" alt="Cardfile Icon" style="width: 60px; height: 60px;"></h1>
-<img src="../../../images\Windows Premiere Edition\inside Windows\Cardfile\New Cardfile.gif" style="display: block; margin-left: auto; margin-right: auto;">
+<img src="../../../images\Windows Premiere Edition\inside Windows\Cardfile\New Cardfile.gif"  width="50%" style="display: block; margin-left: auto; margin-right: auto;">
 <p>
 <u>Το επόμενο πρόγραμμα που θα δούμε είναι αυτό της δημιουργίας καρτών. Το ανοίγουμε μέσα από το MS-DOS Executive κάνοντας διπλό κλικ πάνω στο Cardfile.exe. Ο κύριος σκοπός του προγράμματος είναι η δημιουργία καρτών για να βάλουμε πληροφορίες που θέλουμε να αποθηκεύσουμε. Η κάθε κάρτα στο πάνω μέρος έχει δύο κόκκινες οριζόντιες γραμμές που από πάνω μπαίνει ο τίτλος της κάρτας. Στην εικόνα-παράδειγμα από πάνω βλέπεται ότι μέσα από την επιλογή index στην λίστα Edit στην γραμμή μενού βάζω έναν τίτλο στην κάρτα μου και μετέπειτα κάνω κλικ από κάτω από τις δύο κόκκινες γραμμές και αρχίζω να τοποθετώ πληροφορίες. Τέλος στο παράδειγμά μου μέσα από την λίστα Card και την επιλογή Add… δημιουργώ μια καινούργια καρτέλα δίνοντας της μια ονομασία στο παράθυρό που εμφανίζεται. Από θέμα χρωμάτων αυτή είναι η δεύτερη εφαρμογή που βλέπουμε με προκαθορισμένα χρώματα. Όλες οι καρτέλες στο τέλος που έχουμε δημιουργήσει μπορούμε να τις αποθηκεύσουμε σαν ένα ενιαίο αρχείο με την κατάληξη .CRD και έτσι μπορούμε να κρατάμε πολλαπλά αρχεία με όσες κάρτες θέλουμε (δοκίμασα μέχρι 35 και τις δεχόταν). Η κάθε κάρτα μας επιτρέπει μια γραμμή τίτλου μέχρι 41 χαρακτήρες και 11 γραμμές κειμένου με μέχρι 41 χαρακτήρες η κάθε μια. <b>Δυστυχώς η λειτουργεία της αποθήκευσης δεν λειτουργεί στην συγκεκριμένη έκδοση καθώς όταν προσπαθήσουμε να αποθηκεύσουμε ένα αρχείο μας εμφανίζεται ένα παράθυρο το οποίο μας λέει ότι δεν υπάρχει αρκετός χώρος στον σκληρό δίσκο κάτι το οποίο δεν ισχύει. Ως αποτέλεσμα της μη ικανότητας αποθήκευσης δεδομένων το συγκεκριμένο πρόγραμμα δεν μας είναι χρήσιμο.</b> Ας επιστρέψουμε στην γραμμή του μενού. Οι λίστες που θα δούμε είναι οι File (Αρχείο), Edit (Επεξεργασία), Card (κάρτα) και Search (Αναζήτηση) που έχουν τις εξής επιλογές:
 <ol style="list-style-type: upper-roman;">

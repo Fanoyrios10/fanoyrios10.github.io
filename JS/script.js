@@ -19,6 +19,7 @@ function playMusicHover(){
   music.play();
   }
 
+
 function PlayMusicFinishedHTML(x){
   let music = new Audio('../../../audio/Wimdows Sounds/Windows 98/Windows 98 menu command.mp3');
   music.play();
@@ -70,50 +71,56 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-let x = document.getElementById("Texture");
-let y = document.getElementById("Texture");
+let mainBackgroundTexture = document.getElementById("main");
 
 function background1() {
-  x.style.backgroundImage = "url(../../../images/Background_Tiles/5003.gif)";
-  x.style.color = "black";
-  return x.style;
+  mainBackgroundTexture.style.backgroundImage = "url(../../../images/Background_Tiles/5003.gif)";
+  mainBackgroundTexture.style.color = "black";
+  return mainBackgroundTexture.style;
 }
 
 function background2() {
-  x.style.backgroundImage = "url(../../../images/Background_Tiles/Black.gif)";
-  x.style.color = "white";
-  return x.style;
+  mainBackgroundTexture.style.backgroundImage = "url(../../../images/Background_Tiles/Black.gif)";
+  mainBackgroundTexture.style.color = "white";
+  return mainBackgroundTexture.style;
 }
 
 function background3() {
-  x.style.backgroundImage = "url(../../../images/Background_Tiles/Blue.gif)";
-  x.style.color = "Black";
-  return x.style;
+  mainBackgroundTexture.style.backgroundImage = "url(../../../images/Background_Tiles/Blue.gif)";
+  mainBackgroundTexture.style.color = "Black";
+  return mainBackgroundTexture.style;
 }
 
 function background4() {
-  x.style.backgroundImage = "url(../../../images/Background_Tiles/YellowLight.gif)";
-  x.style.color = "Black";
-  return x.style;
+  mainBackgroundTexture.style.backgroundImage = "url(../../../images/Background_Tiles/YellowLight.gif)";
+  mainBackgroundTexture.style.color = "Black";
+  return mainBackgroundTexture.style;
 }
 
 function background5() {
-  x.style.backgroundImage = "url(../../../images/Background_Tiles/wrinkled-paper-texture_1100-12.gif)";
-  x.style.color = "Black";
-  return x.style;
+  mainBackgroundTexture.style.backgroundImage = "url(../../../images/Background_Tiles/wrinkled-paper-texture_1100-12.gif)";
+  mainBackgroundTexture.style.color = "Black";
+  return mainBackgroundTexture.style;
 }
 
 function background6() {
-  x.style.backgroundImage = "url(../../../images/Background_Tiles/orange_paper.gif)";
-  x.style.color = "Black";
-  return x.style;
+  mainBackgroundTexture.style.backgroundImage = "url(../../../images/Background_Tiles/orange_paper.gif)";
+  mainBackgroundTexture.style.color = "Black";
+  return mainBackgroundTexture.style;
 }
 
-function store(){
-  if (typeof(Storage) !== "undefined") {
-    localStorage.setItem(y.style.backgroundImage,x.style.backgroundImage);
-    document.getElementById("Texture").style.backgroundImage = localStorage.getItem(y.style.backgroundImage);
+let hideSideNavS = document.getElementById("side");
+let hideSideNavM = document.getElementById("main");
+let hideSideNavB = document.getElementById("hideAndShowSideNav");
+
+function sideNav() {
+  if (hideSideNavB.innerText == "Κρύψε την πλαϊνή μπάρα") {
+    hideSideNavS.style.display = "none";
+    hideSideNavB.innerText = "Εμφάνισε την πλαϊνή μπάρα";
+    hideSideNavM.style.left = "0px";
+  } else {
+      hideSideNavS.style.display = "block";
+      hideSideNavB.innerText = "Κρύψε την πλαϊνή μπάρα";
+      hideSideNavM.style.left = "300px";
   }
 }
-console.log(x.style.backgroundImage);
-console.log(y.style.backgroundImage);

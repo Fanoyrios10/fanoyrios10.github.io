@@ -23,7 +23,7 @@
   <a href="mailto:win_hist_2020@outlook.com?subject=Προτάσεις/Σχόλια/Ερωτήσεις" class="right" onmouseover="playMusicHover()">E-mail για Προτάσεις/Σχόλια/Ερωτήσεις</a>
 </div>
 <button onclick="topFunction()" id="GoToTop">&#8657;</button>
-  <div class="sidenav">
+  <div class="sidenav" id="side">
     <div class="sidenav-free-text">
     <p>Η κάθε έκδοση των Windows έχει και την δικιά της ιστοσελίδα. Για να την δείτε επιλέξτε το εικονίδιο της έκδοσης των Windows που θέλετε να δείτε και θα εμφανιστεί μια λίστα με διάφορες υπό εκδόσεις της επιλογής σας. Προτείνεται πάντως για την πλήρη και κατανοητή εμπειρία να ξεκινήσετε από την αρχή.</p>
     </div>
@@ -116,7 +116,10 @@
       <a onclick="PlayMusicFinishedHTML('UC')" onmouseover="playMusicHover()">Windows 8.1 <br>(21/08/2013)</a>
     </div>
   </div>
-  <div class="main" id="Texture">
+  <div class="main" id="main">
+    <div style="text-align: center;">
+      <button id="hideAndShowSideNav" onclick="sideNav()">Κρύψε την πλαϊνή μπάρα</button>
+      </div>
     <p style="text-align: center; font-size: 40px;">
       <b>Επιλέξτε το Background Texture σας που θέλετε να χρησιμοποιήσεται κάνοντας κλικ πάνω του:</b>
       <br>
@@ -257,13 +260,13 @@
         <a target="_blank" href="../../../images\Windows DR5\format C S.png">
           <img src="../../../images\Windows DR5\format C S.png" alt="format C S.">
         </a>
-        <div class="desc">Διαμοόρφωση του C δίσκου <br>Πατήστε πάνω για πλήρη εικόνα</div>
+        <div class="desc">Διαμόρφωση του C δίσκου <br>Πατήστε πάνω για πλήρη εικόνα</div>
 </div>
 <div class="gallery" style="width: 28%;">
   <a target="_blank" href="../../../images\Windows DR5\format C S succesfull.jpg">
     <img src="../../../images\Windows DR5\format C S succesfull.jpg" alt="format C S succesfull">
   </a>
-  <div class="desc">Ολοκλήρωση διαμοόρφωσης του C<br>Πατήστε πάνω για πλήρη εικόνα</div>
+  <div class="desc">Ολοκλήρωση διαμόρφωσης του C<br>Πατήστε πάνω για πλήρη εικόνα</div>
 </div>
 <div class="gallery" style="width: 28%;">
   <a target="_blank" href="../../../images\Windows DR5\Install bat.png">

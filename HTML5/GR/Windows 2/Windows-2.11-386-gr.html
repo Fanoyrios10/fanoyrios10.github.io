@@ -22,7 +22,7 @@
   <a href="mailto:win_hist_2020@outlook.com?subject=Προτάσεις/Σχόλια/Ερωτήσεις" class="right" onmouseover="playMusicHover()">E-mail για Προτάσεις/Σχόλια/Ερωτήσεις</a>
 </div>
 <button onclick="topFunction()" id="GoToTop">&#8657;</button>
-  <div class="sidenav">
+  <div class="sidenav" id="side">
     <div class="sidenav-free-text">
     <p>Η κάθε έκδοση των Windows έχει και την δικιά της ιστοσελίδα. Για να την δείτε επιλέξτε το εικονίδιο της έκδοσης των Windows που θέλετε να δείτε και θα εμφανιστεί μια λίστα με διάφορες υπό εκδόσεις της επιλογής σας. Προτείνεται πάντως για την πλήρη και κατανοητή εμπειρία να ξεκινήσετε από την αρχή.</p>
     </div>
@@ -114,11 +114,12 @@
       <a onclick="PlayMusicFinishedHTML('UC')" onmouseover="playMusicHover()">Windows 8.1 <br>(21/08/2013)</a>
     </div>
   </div>
-  <a href='https://www.symptoma.gr/el/info/covid-19#info' style="color: rgb(61, 61, 61);">COVID-19</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=f0e66dd0b2fdda202b91721015eb433221810cf4'></script>
-  <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/706027/t/6"></script>  
-  <div class="main" id="Texture">
-    <p style="text-align: center; font-size: 20px;">
-      Επιλέξτε το Background Texture σας που θέλετε να χρησιμοποιήσεται κάνοντας κλικ πάνω του:
+  <div class="main" id="main">
+    <div style="text-align: center;">
+    <button id="hideAndShowSideNav" onclick="sideNav()">Κρύψε την πλαϊνή μπάρα</button>
+    </div>
+    <p style="text-align: center; font-size: 40px;">
+      <b>Επιλέξτε το Background Texture σας που θέλετε να χρησιμοποιήσεται κάνοντας κλικ πάνω του:</b>
       <br>
     <button class="BackgroundButtons" onclick="background1()"><img src="../../../images\Background_Tiles\5003.gif" alt="5003"></button>
     <button class="BackgroundButtons" onclick="background2()"><img src="../../../images/Background_Tiles/Black.gif" alt="Black"></button>
@@ -128,7 +129,7 @@
     <button class="BackgroundButtons" onclick="background6()"><img src="../../../images/Background_Tiles/orange_paper.gif" alt="YellowLigh"></button>
     </p>
       <ul class="contents">
-        <h1 style="color: black;">Περιεχόμενα Κεφαλαίου</h1>
+        <h1>Περιεχόμενα Κεφαλαίου</h1>
         <li><a href="#chapter1">1.Windows 1.04 Εισαγωγή - Λήψη αρχείων - Δημιουργία εικονικού συστήματος </a></li>
         <li><a href="#chapter2">2. Εγκατάσταση του MS-DOS και των Windows 1.04</a></li>
         <li><a href="#chapter3">3. Γενική πλοήγηση στα Windows 1.04 και MS-DOS Executive</a></li>
@@ -152,11 +153,11 @@
         <br>
         <br>
         <div class="videov">
-        <iframe width="800" height="600" src="https://www.youtube.com/embed/HG5kZSXi3jY" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="50%" height="600" src="https://www.youtube.com/embed/HG5kZSXi3jY" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       </p>
         <p>
-          Τα Windows 1.01 κυκλοφόρησαν κανονικά στις 20/11/1985 και η τιμή τους ήταν 99$. Ένα πρόγραμμα που θα δούμε που δεν υπήρχε στα Windows Premiere Edition και κυκλοφόρησε με τα Windows 1.01 είναι η Write που είναι ο προκάτοχος του WordPad. Η επόμενη έκδοση είναι τα Windows 1.02 μια έκδοση που κυκλοφόρησε στις αρχές του 1986 μόνο σε κάποιες χώρες στην Ευρώπη υποστηρίζοντας διάφορες γλώσσες όπως Γερμανικά και Γαλλικά. Ακολούθησαν τα Windows1.03 στα μέσα του 1986 που ήταν η πρώτη διεθνή έκδοση των Windows. Διαθέτει πρόσθετα προγράμματα οδήγησης συσκευών, ενημερωμένο Πίνακα Ελέγχου, Reversi, Write και Paint . Υπάρχουν δώδεκα διαφορετικές εκδόσεις του 1.03 με χρονικές σημάνσεις που κυμαίνονται από το καλοκαίρι του 1986 έως τα τέλη του 1987. Ερχόμαστε τώρα στην έκδοση Windows 1.04 που θα κοιτάξουμε σε αυτήν την ιστοσελίδα. Κυκλοφόρησε στις 8/04/1987 και είναι η τελευταία έκδοση των Windows 1 καθώς κυκλοφόρησε ένα εξάμηνο πριν τα Windows 2. Από κάτω ακολουθούν κάποιες εικόνες απο τις εκδόσεις των Windows:</p>
+          Τα Windows 1.01 κυκλοφόρησαν κανονικά στις 20/11/1985 και η τιμή τους ήταν 99$. Ένα πρόγραμμα που θα δούμε που δεν υπήρχε στα Windows Premiere Edition και κυκλοφόρησε με τα Windows 1.01 είναι η Write που είναι ο προκάτοχος του WordPad. Η επόμενη έκδοση είναι τα Windows 1.02 μια έκδοση που κυκλοφόρησε στις αρχές του 1986 μόνο σε κάποιες χώρες στην Ευρώπη υποστηρίζοντας διάφορες γλώσσες όπως Γερμανικά και Γαλλικά. Ακολούθησαν τα Windows1.03 στα μέσα του 1986 που ήταν η πρώτη διεθνή έκδοση των Windows. Διαθέτει πρόσθετα προγράμματα οδήγησης συσκευών, ενημερωμένο Πίνακα Ελέγχου, Reversi, Write και Paint . Υπάρχουν δώδεκα διαφορετικές εκδόσεις του 1.03 με χρονικές σημάνσεις που κυμαίνονται από το καλοκαίρι του 1986 έως τα τέλη του 1987. Ερχόμαστε τώρα στην έκδοση Windows 1.04 που θα κοιτάξουμε σε αυτήν την ιστοσελίδα. Κυκλοφόρησε στις 8/04/1987 και είναι η τελευταία έκδοση των Windows 1 καθώς κυκλοφόρησε ένα εξάμηνο πριν τα Windows 2. Από κάτω ακολουθούν κάποιες εικόνες απο τις εκδόσεις των Windows 1.xx και 1.01:</p>
           <br>
           <div class="galleryBackground">
           <div class="gallery" style="width: 22%;">
@@ -271,13 +272,13 @@
         <a target="_blank" href="../../../images\Windows Premiere Edition\format C S.png">
           <img src="../../../images\Windows Premiere Edition\format C S.png" alt="format C S.">
         </a>
-        <div class="desc">Διαμοόρφωση του C δίσκου <br>Πατήστε πάνω για πλήρη εικόνα</div>
+        <div class="desc">Διαμόρφωση του C δίσκου <br>Πατήστε πάνω για πλήρη εικόνα</div>
 </div>
 <div class="gallery" style="width: 28%;">
   <a target="_blank" href="../../../images\Windows Premiere Edition\format C S succesfull.jpg">
     <img src="../../../images\Windows Premiere Edition\format C S succesfull.jpg" alt="format C S succesfull">
   </a>
-  <div class="desc">Ολοκλήρωση διαμοόρφωσης του C<br>Πατήστε πάνω για πλήρη εικόνα</div>
+  <div class="desc">Ολοκλήρωση διαμόρφωσης του C<br>Πατήστε πάνω για πλήρη εικόνα</div>
 </div>
 <div class="gallery" style="width: 28%;">
   <a target="_blank" href="../../../images\Windows Premiere Edition\execute setup windows.png">
@@ -370,7 +371,7 @@
     </div>
     <br>
       <div class="videov">
-        <iframe width="800" height="600" src="https://www.youtube.com/embed/xtLVhAcbt2k" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  </div>
+        <iframe width="50%" height="600" src="https://www.youtube.com/embed/xtLVhAcbt2k" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  </div>
   </div>
   <div class="main-text">
     <h1 class="header-with-line" id="chapter3">Γενική πλοήγηση στα Windows 1.04 και MS-DOS Executive <img src="../../../images\Windows DR5\Inside Windows\icon MS-DOS Executive.png" alt="icon MS-DOS Executive.png" style="width: 60px; height: 60px;"></h1>
@@ -390,38 +391,38 @@
     <li><b><u>Size: </u></b><u>Αυτήν την επιλογή μπορούμε να την χρησιμοποιήσουμε όταν έχουμε τουλάχιστον δύο παράθυρα ανοιχτά. Επιλέγοντας την ο κέρσορας μας αλλάζει στο εικονίδιο αλλαγής μεγέθους παραθύρου (εικονίδιο στην πάνω γωνία δεξιά). Κινώντας τον κέρσορα μας δεξιά-αριστερά όταν έχουμε παράθυρά το ένα δίπλα στο άλλο ή πάνω-κάτω όταν το ένα παράθυρο είναι πάνω στο άλλο τότε όταν ξεπεράσουμε το μέγεθος που έχει ήδη το παράθυρό μας εμφανίζονται τέλειες που δείχνουν το μέγεθος του παραθύρου εάν κάνουμε κλικ σε αυτό το σημείο. Η κάτω εικόνα το δείχνει αυτό στην πράξη.</u>
       <br>
       <br>
-      <img src="../../../images\Windows 1.04\Inside Windows\MS-DOS Executive\size window.gif" alt="size window" height="400px" style="display: block; margin-left: auto; margin-right: auto;">
+      <img src="../../../images\Windows 1.04\Inside Windows\MS-DOS Executive\size window.gif" alt="size window" height="400px" width="50%" style="display: block; margin-left: auto; margin-right: auto;">
       <br>
     </li>
     <li>
       <b><u>Move: </u></b><u>Όταν επιλέξουμε αυτήν την επιλογή ο κέρσορας μας αλλάζει στο εικονίδιο της εφαρμογής που έχουμε επιλεγμένη και μπορούμε κάνοντας ένα κλικ σε οποιοδήποτε σημείο πάνω στην οθόνη να μετακινήσουμε το παράθυρο μας ή να το ελαχιστοποιήσουμε. Δείτε το παράδειγμα στην κάτω εικόνα για να καταλάβετε.</u>
       <br>
       <br>
-      <img src="../../../images\Windows 1.04\Inside Windows\MS-DOS Executive\Move window.gif" alt="Move window" height="400px" style="display: block; margin-left: auto; margin-right: auto;">
+      <img src="../../../images\Windows 1.04\Inside Windows\MS-DOS Executive\Move window.gif" alt="Move window" height="400px" width="50%" style="display: block; margin-left: auto; margin-right: auto;">
       <br>
     </li>
     <li><b><u>Icon: </u></b><u>Όταν επιλέξουμε αυτήν την επιλογή το παράθυρο ελαχιστοποιείται και πηγαίνει στην γραμμή εικονιδίων των εφαρμογών μαζί με τις υπόλοιπες ελαχιστοποιημένες εφαρμογές. Δείτε το παράδειγμα στην κάτω εικόνα για να καταλάβετε.</u>
     <br>
     <br>
-    <img src="../../../images\Windows 1.04\Inside Windows\MS-DOS Executive\Icon window.gif" alt="Icon window" height="400px" style="display: block; margin-left: auto; margin-right: auto;">
+    <img src="../../../images\Windows 1.04\Inside Windows\MS-DOS Executive\Icon window.gif" alt="Icon window" width="50%" height="400px" style="display: block; margin-left: auto; margin-right: auto;">
     <br>
     </li>
     <li><b><u>Zoom: </u></b><u>Όταν επιλέξουμε αυτήν την επιλογή το παράθυρο μεγιστοποιείται και καταλαμβάνει ολόκληρη την οθόνη. Δείτε το παράδειγμα στην κάτω εικόνα για να καταλάβετε.</u>
       <br>
       <br>
-      <img src="../../../images\Windows 1.04\Inside Windows\MS-DOS Executive\zoom window.gif" alt="zoom window" height="400px" style="display: block; margin-left: auto; margin-right: auto;">
+      <img src="../../../images\Windows 1.04\Inside Windows\MS-DOS Executive\zoom window.gif" alt="zoom window" width="50%" height="400px" style="display: block; margin-left: auto; margin-right: auto;">
       <br>
     </li>
     <li><b><u>Close: </u></b><u>Όταν επιλέξουμε αυτήν την επιλογή η εφαρμογή τερματίζεται ολοκληρωτικά. Επίσης το ίδιο αποτέλεσμα θα έχουμε κάνοντας διπλό κλικ πάνω στο εικονίδιο με τις τρεις οριζόντιες γραμμές. Τέλος αν πατήσεις Close στο MS-DOS Executive θα σου βγει ένα παράθυρο που θα σε ρωτήσει εάν θέλεις να τερματίσεις ολοκληρωτικά τα Windows. Δείτε το παράδειγμα στην κάτω εικόνα για να καταλάβετε.</u>
       <br>
       <br>
-      <img src="../../../images\Windows 1.04\Inside Windows\MS-DOS Executive\close window.gif" alt="close window" height="400px" style="display: block; margin-left: auto; margin-right: auto;">
+      <img src="../../../images\Windows 1.04\Inside Windows\MS-DOS Executive\close window.gif" alt="close window" width="50%" height="400px" style="display: block; margin-left: auto; margin-right: auto;">
       <br>
       </li>
       <li><b><u>About: </u></b><u>Όταν επιλέξουμε αυτήν την επιλογή ένα παράθυρο εμφανίζεται που μας δίνει κάποιες ιδιότητες τις εφαρμογής όπως το πως ονομάζεται, το τι έκδοση είναι, σε πιο λειτουργικό σύστημα τρέχει καθώς κα την χρονολογία της. Επίσης μας εμφανίζονται διάφορες πληροφορίες ή οδηγίες σχετικά με την εφαρμογή π.χ. στο MS-DOS Executive μας εμφανίζεται ο ελεύθερος διαθέσιμο χώρος στον σκληρό δίσκο και η διαθέσιμη μνήμη RAM του συστήματος σε KB. Δείτε την εικόνα από κάτω για παράδειγμα.</u>
         <br>
         <br>
-        <img src="../../../images\Windows 1.04\Inside Windows\MS-DOS Executive\Executive About.png" alt="Executive About" height="400px" style="display: block; margin-left: auto; margin-right: auto;">
+        <img src="../../../images\Windows 1.04\Inside Windows\MS-DOS Executive\Executive About.png" alt="Executive About" width="50%" height="400px" style="display: block; margin-left: auto; margin-right: auto;">
         <br>
       </li>
       </ol>
@@ -582,7 +583,7 @@
             <a target="_blank" href="../../../images\Windows Premiere Edition\inside Windows\MS-DOS Executive\Special Menu format Data Disk.jpg">
               <img src="../../../images\Windows Premiere Edition\inside Windows\MS-DOS Executive\Special Menu format Data Disk.jpg" alt="Special Menu format Data Disk">
             </a>
-            <div class="desc">Παράθυρο διαμοόρφωσης δισκέτας φακέλου<br>Πατήστε πάνω για πλήρη εικόνα</div>
+            <div class="desc">Παράθυρο διαμόρφωσης δισκέτας φακέλου<br>Πατήστε πάνω για πλήρη εικόνα</div>
             </div>
             <div class="gallery" style="width:30%">
               <a target="_blank" href="../../../images\Windows Premiere Edition\inside Windows\MS-DOS Executive\Special Menu System Disk.jpg">
@@ -608,7 +609,7 @@
   Το πρώτο πρόγραμμα που θα κοιτάξουμε (πέρα από το MS-DOS Executive) είναι ο Πίνακας Ελέγχου (Control Panel). Ο πίνακας Ελέγχου υπάρχει ακόμα και σήμερα στα Windows (αν και πάει να αντικατασταθεί από τις ρυθμίσεις των Windows στα Windows10) και περιέχει δεκάδες αν όχι εκατοντάδες ρυθμίσεις για τα Windows. Για να ανοίξεις τον Πίνακα ελέγχου κάνεις διπλό κλικ πάνω στο Control.exe πρόγραμμα στο MS-DOS Executive. <u>Από πάνω υπάρχει μια εικόνα που δίχνει τον πίνακα ελέγχου στα Windows Premiere Edition (αριστερά) και στα Windows DR5 (δεξιά). Με την πρώτη ματια δεν υπάρχουν σοβαρές αλλαγές άλλα αμάν παρατηρήσετε στο πάνω μέρος της εφαρμογής υπάρχει ένα μενού. Το τι μπορούμε να κάνουμε σε αυτόν τον Πίνακα Ελέγχου το αναλύω στο παρακάτω βίντεο.</u>
   <br>
   <div class="videov">
-    <iframe width="800" height="600" src="https://www.youtube.com/embed/IMvWiBa4BJU" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="50%" height="600" src="https://www.youtube.com/embed/IMvWiBa4BJU" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 </p>
 <h1 class="header-with-line" id="chapter5">Clock (Ρολόι)<img src="../../../images\Windows Premiere Edition\inside Windows\Clock\Clock Icon.png" alt="clock icon" style="width: 60px; height: 60px;"></h1>
@@ -626,20 +627,20 @@
 </p>
 <h1 class="header-with-line" id="chapter7"> <u>Paint (Ζωγραφική)</u><img src="../../../images\Windows Premiere Edition\inside Windows\Paint\Pain Icon.png" alt="chart icon" style="width: 60px; height: 60px;"></h1>
 <div class="videov">
-  <iframe width="800" height="600" src="https://www.youtube.com/embed/18E254qQWCU" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="50%" height="600" src="https://www.youtube.com/embed/18E254qQWCU" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <p>
   <u>Το επόμενο πρόγραμμα που θα κοιτάξουμε είναι η ζωγραφική ένα από τα καινούργια προγράμματα που κάνουν την πρώτη τους εμφάνιση στα Windows. Η εξήγηση του προγράμματος γίνεται μέσα από το βίντεο που έχω βάλει από πάνω.</u>
 </p>
 <h1 class="header-with-line" id="chapter8"><u>Calendar (Ημερολόγιο)</u> <img src="../../../images\Windows Premiere Edition\inside Windows\Calendar\Calendar Icon.png" alt="Calendar Icon" style="width: 60px; height: 60px;"></h1>
 <div class="videov">
-  <iframe width="800" height="600" src="https://www.youtube.com/embed/uTlbi-GZEgA" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="50%" height="600" src="https://www.youtube.com/embed/uTlbi-GZEgA" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <p>
 <u>Άλλο ένα πρόγραμμα που είναι καινούργιο στα Windows και θα εξηγηθεί μέσα από ένα βίντεο είναι το ημερολόγιο, το πρώτο πρόγραμμα που μας βοηθάει στον σχεδιασμό μας.</u>
 </p>
 <h1 class="header-with-line" id="chapter9"><u>Cardfile (Κάρτες)</u> <img src="../../../images\Windows Premiere Edition\inside Windows\Cardfile\Cardfile Icon.png" alt="Cardfile Icon" style="width: 60px; height: 60px;"></h1>
-<img src="../../../images\Windows Premiere Edition\inside Windows\Cardfile\New Cardfile.gif" style="display: block; margin-left: auto; margin-right: auto;">
+<img src="../../../images\Windows Premiere Edition\inside Windows\Cardfile\New Cardfile.gif"  width="50%" style="display: block; margin-left: auto; margin-right: auto;">
 <p>
 <u>Το επόμενο πρόγραμμα που θα δούμε είναι αυτό της δημιουργίας καρτών. Το ανοίγουμε μέσα από το MS-DOS Executive κάνοντας διπλό κλικ πάνω στο Cardfile.exe. Ο κύριος σκοπός του προγράμματος είναι η δημιουργία καρτών για να βάλουμε πληροφορίες που θέλουμε να αποθηκεύσουμε. Η κάθε κάρτα στο πάνω μέρος έχει δύο κόκκινες οριζόντιες γραμμές που από πάνω μπαίνει ο τίτλος της κάρτας. Στην εικόνα-παράδειγμα από πάνω βλέπεται ότι μέσα από την επιλογή index στην λίστα Edit στην γραμμή μενού βάζω έναν τίτλο στην κάρτα μου και μετέπειτα κάνω κλικ από κάτω από τις δύο κόκκινες γραμμές και αρχίζω να τοποθετώ πληροφορίες. Τέλος στο παράδειγμά μου μέσα από την λίστα Card και την επιλογή Add… δημιουργώ μια καινούργια καρτέλα δίνοντας της μια ονομασία στο παράθυρό που εμφανίζεται. Από θέμα χρωμάτων αυτή είναι η δεύτερη εφαρμογή που βλέπουμε με προκαθορισμένα χρώματα. Όλες οι καρτέλες στο τέλος που έχουμε δημιουργήσει μπορούμε να τις αποθηκεύσουμε σαν ένα ενιαίο αρχείο με την κατάληξη .CRD και έτσι μπορούμε να κρατάμε πολλαπλά αρχεία με όσες κάρτες θέλουμε (δοκίμασα μέχρι 35 και τις δεχόταν). Η κάθε κάρτα μας επιτρέπει μια γραμμή τίτλου μέχρι 41 χαρακτήρες και 11 γραμμές κειμένου με μέχρι 41 χαρακτήρες η κάθε μια. <b>Δυστυχώς η λειτουργεία της αποθήκευσης δεν λειτουργεί στην συγκεκριμένη έκδοση καθώς όταν προσπαθήσουμε να αποθηκεύσουμε ένα αρχείο μας εμφανίζεται ένα παράθυρο το οποίο μας λέει ότι δεν υπάρχει αρκετός χώρος στον σκληρό δίσκο κάτι το οποίο δεν ισχύει. Ως αποτέλεσμα της μη ικανότητας αποθήκευσης δεδομένων το συγκεκριμένο πρόγραμμα δεν μας είναι χρήσιμο.</b> Ας επιστρέψουμε στην γραμμή του μενού. Οι λίστες που θα δούμε είναι οι File (Αρχείο), Edit (Επεξεργασία), Card (κάρτα) και Search (Αναζήτηση) που έχουν τις εξής επιλογές:
 <ol style="list-style-type: upper-roman;">
@@ -843,18 +844,18 @@
    Δυστυχώς είμαι παντελώς αρχάριος στο παιχνίδι (όπως και θα δείτε πιο κάτω). Για αυτό θα σας δώσω ένα <a href="http://www.intelligence.tuc.gr/~robots/ARCHIVE/2008w/projects/nydriotis/Site/Othello.html">link</a> σε μια ιστοσελίδα με τους κανόνες. Από κάτω είναι ένα μικρό βίντεο με εμένα να αποτυχαίνω πλήρως σε ένα παιχνίδι με τον υπολογιστή.
 </p>
   <div class="videov">
-  <iframe width="800" height="600" src="https://www.youtube.com/embed/SS6VIRQdezk" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  </div>
+  <iframe width="50%" height="600" src="https://www.youtube.com/embed/SS6VIRQdezk" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  </div>
   <h1 class="header-with-line" id="chapter12">Clipboard (Πρόχειρο) <img src="../../../images\Windows Premiere Edition\inside Windows\Clipboard\Clipboard Icon.png" alt="Clipboard Icon" style="width: 60px; height: 60px;"></h1>
   <img src="../../../images\Windows Premiere Edition\inside Windows\Clipboard\Clipboard Use.gif" alt="Clipboard Use" width="50%" height="400px" style="display: block; margin-left: auto; margin-right: auto;">
   <p>
     <u>Το Clipboard (Πρόχειρο) είναι μια εφαρμογή που την είχαμε δει και στα Windows DR5. Το πρόβλημα ήταν πως δεν μπορούσες να την λειτουργήσεις καθώς το notepad με το οποίο θα μπορούσες να αντιγράψεις κείμενο δεν λειτουργούσε. Από την στιγμή όμως που αυτή η εφαρμογή λειτουργεί σε αυτήν την έκδοση των Windows μαζί με άλλες εφαρμογές που χρησιμοποιούν αντιγραφή και επικόλληση αυτό σημαίνει ότι μπορούμε να χρησιμοποιήσουμε κανονικά αυτό το πρόγραμμα. Το ανοίγουμε μέσα από το MS-DOS EXECUTIVE κάνοντας διπλό κλικ στο CLIPBRD.EXE και μας εμφανίζεται ένα κενό παράθυρο με το μοναδικό κείμενο να μας λέει ότι το πρόχειρο είναι άδειο. Σκοπός του προγράμματος είναι να μας δείχνει το τελευταίο κείμενο που πατήσαμε το κουμπί αντιγραφής, αυτό το κείμενο για να μπορέσουμε να το επικολλήσουμε όπου θέλουμε. Ένας περιορισμός είναι ότι μπορεί να κρατάει στο πρόχειρο μόνο ένα πράγμα. Εάν υπάρχει ήδη ένα κείμενο και πάμε να αντιγράψουμε άλλο κείμενο αυτό θα αντικατασταθεί. Στο παράδειγμα πιο πάνω βλέπετε να ανοίγω το notepad, να γράφω μια λέξη, αυτή να εμφανίζεται στο clipboard και να κάνω επικόλληση στο Calendar και η λέξη που αντέγραψα να παραμένει στο πρόχειρο για να μπορεί να γίνει επικόλληση αλλού.</u>
 </p>
 <h1 class="header-with-line" id="chapter13"><u>Program Information Editor (Πρόγραμμα επεξεργασίας πληροφοριών προγράμματος)</u> <img src="../../../images\Windows Premiere Edition\inside Windows\PIF Editor\Pif editor icon.png" alt="Pif editor icon" style="width: 60px; height: 60px;"></h1>
-<img src="../../../images\Windows Premiere Edition\inside Windows\PIF Editor\PIF Main Program.png" height="400px" width="1000px" style="display: block; margin-left: auto; margin-right: auto;">
+<img src="../../../images\Windows Premiere Edition\inside Windows\PIF Editor\PIF Main Program.png" height="400px" width="50%" style="display: block; margin-left: auto; margin-right: auto;">
 <p><u>
   Ένα πρόγραμμα που προοριζόταν για τους προγραμματιστές ήταν το Program Information Editor (Πρόγραμμα επεξεργασίας πληροφοριών προγράμματος) το οποίο το ανοίγουμε μέσα από το MS-DOS EXECUTIVE κάνοντας διπλό κλικ στο PIFEDIT.EXE. Μας εμφανίζεται ένα παράθυρο με κάποια πεδία και κάποιες επιλογές για να συμπληρώσουμε. Αυτά τα παιδία έχουν να κάνουν με διάφορες πληροφορίες ενός προγράμματος όπως την ονομασία του, τον τίτλο του, σε πιο σημείο βρίσκεται, πόση μνήμη RAM απαιτεί το πρόγραμμά κ.α. Στην ουσία φτιάχνουμε ένα προφίλ και το αποθηκεύουμε σαν ένα αρχείο με κατάληξη .pif. Σε αυτήν την έκδοση των Windows υπάρχει ένας φάκελος που έχει δημιουργηθεί από την εγκατάσταση και λέγεται PIF. Μέσα σε αυτό τον φάκελο υπάρχουν 53 προφίλ διάφορων προγραμμάτων (εικόνα κάτω). Κάνοντας διπλό κλικ σε ένα προφίλ μπορούμε να ανοίξουμε το συγκεκριμένο προφίλ μέσα στο πρόγραμμα και να δούμε τις πληροφορίες του (εικόνα πάνω).
 </u></p>
-<img src="../../../images\Windows Premiere Edition\inside Windows\PIF Editor\PIF folder.png" height="400px" width="1000px" style="display: block; margin-left: auto; margin-right: auto;">
+<img src="../../../images\Windows Premiere Edition\inside Windows\PIF Editor\PIF folder.png" height="400px" width="50%" style="display: block; margin-left: auto; margin-right: auto;">
 <h1 class="header-with-line" id="chapter14">Άλλα Προγράμματα</h1>
 <p>
   <div class="gallery" style="float: right;">
@@ -892,8 +893,6 @@
   <a href="Windows-Premiere-Edition-gr.html"> <button class="button button1" style="float: left;">Προηγούμενο κεφάλαιο: Windows Premiere Edition (30/07/1985)</button></a>
 </div>
   </div>
-</div>
-</div>
 <script src="../../../JS\script.js"></script>
     </body>
 </html>

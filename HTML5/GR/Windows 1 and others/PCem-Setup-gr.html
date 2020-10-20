@@ -15,7 +15,7 @@
   <p style="font-size: 25px";"><b>Σετάροντας το πρόγραμμα προσομοιώσεις (PCem)</b></p>
 </div>
 
-<div class="navbar">
+<div class="navbar" id="side">
   <a onclick="PlayMusicFinishedHTML('Index')" onmouseover="playMusicHover()">Αρχική Σελίδα (αλλαγή γλώσσας)</a>
   <a onclick="PlayMusicFinishedHTML('UC')" onmouseover="playMusicHover()">Αρχεία Βίντεο</a>
   <a onclick="PlayMusicFinishedHTML('UC')" onmouseover="playMusicHover()">Αρχεία Ήχου</a>
@@ -117,7 +117,10 @@
     <a onclick="PlayMusicFinishedHTML('UC')" onmouseover="playMusicHover()">Windows 8.1 <br>(21/08/2013)</a>
   </div>
 </div>
-  <div class="main" style="border-bottom: solid red 3px;" id="Texture">
+  <div class="main" style="border-bottom: solid red 3px;" id="main">
+    <div style="text-align: center;">
+      <button id="hideAndShowSideNav" onclick="sideNav()">Κρύψε την πλαϊνή μπάρα</button>
+      </div>
     <p style="text-align: center; font-size: 40px;">
       <b>Επιλέξτε το Background Texture σας που θέλετε να χρησιμοποιήσεται κάνοντας κλικ πάνω του:</b>
       <br>
