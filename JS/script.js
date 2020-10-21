@@ -15,13 +15,13 @@ for (i = 0; i < dropdown.length; i++) {
 }
 
 function playMusicHover(){
-  let music = new Audio('../../../audio/Wimdows Sounds/Windows 98/Windows 98 menu popup.mp3');
+  let music = new Audio('../../../audio/Windows Sounds/Windows 98/Windows 98 menu popup.mp3');
   music.play();
   }
 
 
 function PlayMusicFinishedHTML(x){
-  let music = new Audio('../../../audio/Wimdows Sounds/Windows 98/Windows 98 menu command.mp3');
+  let music = new Audio('../../../audio/Windows Sounds/Windows 98/Windows 98 menu command.mp3');
   music.play();
   if (x === "Home") {
       setTimeout(function () {
