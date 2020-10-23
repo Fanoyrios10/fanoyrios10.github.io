@@ -15,13 +15,13 @@ for (i = 0; i < dropdown.length; i++) {
 }
 
 function playMusicHover(){
-  let music = new Audio('../../../audio/Windows Sounds/Windows 98/Windows 98 menu popup.mp3');
+  let music = new Audio('../../../Audio/Windows_Sounds/Windows_98/Windows_98_menu_popup.mp3');
   music.play();
   }
 
 
 function PlayMusicFinishedHTML(x){
-  let music = new Audio('../../../audio/Windows Sounds/Windows 98/Windows 98 menu command.mp3');
+  let music = new Audio('../../../Audio/Windows_Sounds/Windows_98/Windows_98_menu_command.mp3');
   music.play();
   if (x === "Home") {
       setTimeout(function () {
@@ -74,37 +74,37 @@ function topFunction() {
 let mainBackgroundTexture = document.getElementById("main");
 
 function background1() {
-  mainBackgroundTexture.style.backgroundImage = "url(../../../images/Background_Tiles/5003.gif)";
+  mainBackgroundTexture.style.backgroundImage = "url(../../../Images/Background_Tiles/5003.gif)";
   mainBackgroundTexture.style.color = "black";
   return mainBackgroundTexture.style;
 }
 
 function background2() {
-  mainBackgroundTexture.style.backgroundImage = "url(../../../images/Background_Tiles/Black.gif)";
+  mainBackgroundTexture.style.backgroundImage = "url(../../../Images/Background_Tiles/Black.gif)";
   mainBackgroundTexture.style.color = "white";
   return mainBackgroundTexture.style;
 }
 
 function background3() {
-  mainBackgroundTexture.style.backgroundImage = "url(../../../images/Background_Tiles/Blue.gif)";
+  mainBackgroundTexture.style.backgroundImage = "url(../../../Images/Background_Tiles/Blue.gif)";
   mainBackgroundTexture.style.color = "Black";
   return mainBackgroundTexture.style;
 }
 
 function background4() {
-  mainBackgroundTexture.style.backgroundImage = "url(../../../images/Background_Tiles/YellowLight.gif)";
+  mainBackgroundTexture.style.backgroundImage = "url(../../../Images/Background_Tiles/YellowLight.gif)";
   mainBackgroundTexture.style.color = "Black";
   return mainBackgroundTexture.style;
 }
 
 function background5() {
-  mainBackgroundTexture.style.backgroundImage = "url(../../../images/Background_Tiles/wrinkled-paper-texture_1100-12.gif)";
+  mainBackgroundTexture.style.backgroundImage = "url(../../../Images/Background_Tiles/wrinkled-paper-texture_1100-12.gif)";
   mainBackgroundTexture.style.color = "Black";
   return mainBackgroundTexture.style;
 }
 
 function background6() {
-  mainBackgroundTexture.style.backgroundImage = "url(../../../images/Background_Tiles/orange_paper.gif)";
+  mainBackgroundTexture.style.backgroundImage = "url(../../../Images/Background_Tiles/orange_paper.gif)";
   mainBackgroundTexture.style.color = "Black";
   return mainBackgroundTexture.style;
 }
