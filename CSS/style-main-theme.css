@@ -70,7 +70,6 @@ body {
   text-align: center;
   background-color: greenyellow;
   padding: 30px;
-  list-style-type:none;
   font-size: 30px;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -90,7 +89,7 @@ body {
 
 .contents li{
   text-decoration: none;
-  color: black;
+  list-style-type:none;
 }
 
 .main {
