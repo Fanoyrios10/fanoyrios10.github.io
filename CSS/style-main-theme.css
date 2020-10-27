@@ -122,13 +122,13 @@ body {
 }
 
 .header-with-line {
-  border-bottom:2px solid rgb(255, 0, 0);
-  width:100%;
+  border-top: 5px solid green;
+  border-bottom:5px solid rgb(255, 0, 0);
   word-wrap: break-word;
   font-size: 46px;
   text-align: center;
-  padding-bottom:3px;
-  padding-left: 0px;
+  padding: 10px;
+  margin: 20px;
 }
 
 .dropdown-btn img {
