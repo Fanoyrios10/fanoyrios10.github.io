@@ -1,5 +1,6 @@
 "use strict";
 let dropdown = document.getElementsByClassName("dropdown-btn");
+let dropdownConteiner = document.getElementsByClassName("dropdown-container");
 let i;
 
 for (i = 0; i < dropdown.length; i++) {
@@ -8,8 +9,12 @@ for (i = 0; i < dropdown.length; i++) {
   let dropdownContent = this.nextElementSibling;
   if (dropdownContent.style.display === "block") {
   dropdownContent.style.display = "none";
+  dropdownConteiner.style.transition = "1s";
+  dropdown.style.transition = "1s";
   } else {
   dropdownContent.style.display = "block";
+  dropdownConteiner.style.transition = "1s";
+  dropdown.style.transition = "1s";
   }
   });
 }
@@ -118,6 +123,8 @@ function sideNav() {
     hideSideNavS.style.display = "none";
     hideSideNavB.innerText = "Εμφάνισε την πλαϊνή μπάρα";
     hideSideNavM.style.left = "0px";
+    hideSideNavS.style.transition = "1s";
+    hideSideNavM.style.transition = "1s";
   } else {
       hideSideNavS.style.display = "block";
       hideSideNavB.innerText = "Κρύψε την πλαϊνή μπάρα";
