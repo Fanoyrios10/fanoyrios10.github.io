@@ -9,12 +9,6 @@ body {
   margin: 0px;
 }
 
-
-
-.videov iframe {
-  width: 80%;
-}
-
 .header {
   padding: 80px;
   width: unset;
@@ -66,6 +60,79 @@ body {
   padding-top: 5px;
 }
 
+.sidenav a, .dropdown-btn {
+  padding: 6px 0 6px 0;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(15, 211, 146);
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+}
+
+.sidenav a:hover, .dropdown-btn:hover {
+  color: rgb(19, 8, 8);
+  animation: colorSwitch;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+.dropdown-btn img {
+  width: 290px;
+  height: 60px;
+  vertical-align: middle;
+}
+
+.active {
+  color: white;
+  animation-name: colorSwitch;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+.dropdown-container {
+  display: none;
+  background-color: rgb(38, 38, 38);
+  font-size: 20px;
+}
+
+.sidenav-free-text {
+  color: cyan;
+  font-size: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+}
+
+#hideAndShowSideNav {
+  background-color: rgb(2, 7, 255); 
+  color: rgb(250, 4, 4); 
+  border: 10px solid rgb(76, 175, 80);
+  width: 50%;
+  height: 100px;
+  font-size: 38px;
+  cursor: col-resize;
+  margin: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#hideAndShowSideNav:hover{
+  background-color: rgb(208, 255, 0);
+  color: black;
+  transition-duration: 2s;
+}
+
+#hideAndShowSideNav:not(:hover){
+  background-color: rgb(2, 7, 255); 
+  color: rgb(250, 4, 4); 
+  transition-duration: 2s;
+}
 
 .contents {
   border: 4px solid red;
@@ -108,6 +175,18 @@ body {
   margin: 30px;
 }
 
+.WindowsDR5Marked{
+  background-color: yellow;
+}
+
+.videov{
+  text-align: center;
+}
+
+.videov iframe {
+  width: 50%;
+}
+
 .BackgroundButtons {
   padding: 4px;
   background-color: aquamarine;
@@ -133,12 +212,6 @@ body {
   margin: 20px;
 }
 
-.dropdown-btn img {
-  width: 290px;
-  height: 60px;
-  vertical-align: middle;
-}
-
 @keyframes colorSwitchNavBar {
   0%   {background-color:red;}
   25%  {color: black; background-color:yellow;}
@@ -153,57 +226,6 @@ body {
   50%  {color: white; background-color:blue;}
   75%  {color: rgb(15, 211, 146);background-color:green;}
   100% {background-color:red;}
-}
-
-.sidenav a, .dropdown-btn {
-  padding: 6px 0 6px 0;
-  text-decoration: none;
-  font-size: 25px;
-  font-weight: bold;
-  text-align: center;
-  color: rgb(15, 211, 146);
-  display: block;
-  border: none;
-  background: none;
-  width: 100%;
-  cursor: pointer;
-  outline: none;
-}
-
-.audiop {
-  text-align: left;
-}
-
-.videov{
-  text-align: center;
-}
-
-.sidenav a:hover, .dropdown-btn:hover {
-  color: rgb(19, 8, 8);
-  animation: colorSwitch;
-  animation-duration: 8s;
-  animation-iteration-count: infinite;
-}
-
-.active {
-  color: white;
-  animation-name: colorSwitch;
-  animation-duration: 8s;
-  animation-iteration-count: infinite;
-}
-
-.dropdown-container {
-  display: none;
-  background-color: rgb(38, 38, 38);
-  font-size: 20px;
-}
-
-.sidenav-free-text {
-  color: cyan;
-  font-size: 20px;
-  padding-left: 16px;
-  padding-right: 16px;
-  text-align: center;
 }
 
 .galleryBackground {
@@ -233,6 +255,15 @@ body {
   max-height: 400px;
 }
 
+.desc {
+  margin: auto;
+  padding: 5px;
+  text-align: center;
+  font-size: 15px;
+  word-wrap: break-word;
+  color: black;
+}
+
 .setupNewProfileGif{
   display: block;
   margin-left: auto;
@@ -245,15 +276,6 @@ body {
 
 .setupNewProfileGif:hover{
   background-image: url(setup_new_profile.gif);
-}
-
-.desc {
-  margin: auto;
-  padding: 5px;
-  text-align: center;
-  font-size: 15px;
-  word-wrap: break-word;
-  color: black;
 }
 
 .gif_pictures{
@@ -278,8 +300,6 @@ body {
   appearance: button;
 }
 
-
-
 .buttonLinkBottom:hover{
   background-color: rgb(76, 175, 80);
   color: blue;
@@ -300,32 +320,6 @@ body {
   padding: 15px;
   border-radius: 4px;
 }
-
-#hideAndShowSideNav {
-  background-color: rgb(2, 7, 255); 
-  color: rgb(250, 4, 4); 
-  border: 10px solid rgb(76, 175, 80);
-  width: 50%;
-  height: 100px;
-  font-size: 38px;
-  cursor: col-resize;
-  margin: 30px;
-  text-align: center;
-  font-weight: bold;
-}
-
-#hideAndShowSideNav:hover{
-  background-color: rgb(208, 255, 0);
-  color: black;
-  transition-duration: 2s;
-}
-
-#hideAndShowSideNav:not(:hover){
-  background-color: rgb(2, 7, 255); 
-  color: rgb(250, 4, 4); 
-  transition-duration: 2s;
-}
-
 
 @media screen and (max-width: 1015px) {
   .main {

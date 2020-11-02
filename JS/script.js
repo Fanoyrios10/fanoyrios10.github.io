@@ -1,4 +1,6 @@
 "use strict";
+
+// loop that allows the dropdown menu on click in the sidenav plus the color animation
 let dropdown = document.getElementsByClassName("dropdown-btn");
 let dropdownConteiner = document.getElementsByClassName("dropdown-container");
 let i;
@@ -19,12 +21,13 @@ for (i = 0; i < dropdown.length; i++) {
   });
 }
 
+//function that plays the sound when you hover over a button in the sidenav and the navbar
 function playMusicHover(){
   let music = new Audio('../../../Audio/Windows_Sounds/Windows_98/Windows_98_menu_popup.mp3');
   music.play();
   }
 
-
+//function that plays music and directs you to a website when you click on a link in the sidenav and the navbar
 function PlayMusicFinishedHTML(x){
   let music = new Audio('../../../Audio/Windows_Sounds/Windows_98/Windows_98_menu_command.mp3');
   music.play();
@@ -59,6 +62,7 @@ function PlayMusicFinishedHTML(x){
   }
 }
 
+// function that makes the go to top button appear as soon as you begin scrolling downwards
 let mybutton = document.getElementById("GoToTop");
 
 window.onscroll = function() {scrollFunction()};
@@ -76,6 +80,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
+//functions that change the background of main when you click on the buckground buttons
 let mainBackgroundTexture = document.getElementById("main");
 
 function background1() {
@@ -114,6 +119,7 @@ function background6() {
   return mainBackgroundTexture.style;
 }
 
+//function that hides and shows the sidenav when you click on the hide and show sidenav button
 let hideSideNavS = document.getElementById("side");
 let hideSideNavM = document.getElementById("main");
 let hideSideNavB = document.getElementById("hideAndShowSideNav");
