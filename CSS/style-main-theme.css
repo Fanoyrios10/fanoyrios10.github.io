@@ -170,6 +170,7 @@ body {
 
 .main-text {
   text-align: justify;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
   word-wrap: normal;
   font-size: 20px;
   margin: 30px;
@@ -185,6 +186,7 @@ body {
 
 .videov iframe {
   width: 50%;
+  height: 500px;
 }
 
 .BackgroundButtons {
@@ -207,9 +209,57 @@ body {
   border-bottom:5px solid rgb(255, 0, 0);
   word-wrap: break-word;
   font-size: 46px;
+  font-weight: bold;
   text-align: center;
-  padding: 10px;
-  margin: 20px;
+  margin: 20px 0;
+}
+
+.header-with-line header{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: inline;
+}
+
+.programIcons{
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+  top: 10px;
+  bottom: 20px;
+  width: 60px;
+  height: 60px;
+}
+
+.singleBigImage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  height: 800px;
+}
+
+.singleComparisonImage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 400px;
+}
+
+.singleNormalImage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 400px;
+}
+
+.singleGif{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 423px;
 }
 
 @keyframes colorSwitchNavBar {
@@ -236,13 +286,18 @@ body {
   background-image: url(../Images/Background_Tiles/bluesand_paper.gif);
 }
 
+.galleryBackground .gallery{
+  display: inline-block;
+  width: 28%;
+}
+
 .gallery {
   transition: transform 1s;
   margin: 10px;
   display: inline-block;
   background-color: tomato;
   border: 2px solid rgb(19, 16, 223);
-  width: 180px;
+  width: 200px;
 }
 
 .gallery:hover {
